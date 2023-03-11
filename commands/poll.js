@@ -43,6 +43,12 @@ module.exports = {
 
         
         interaction.reply({ embeds: [pollembed] });
+        const message = await interaction.fetchReply();
+        message.react('📗');
+        message.react('📘');
+        message.react('📙');
+        message.react('📔');
+        message.react('📕');
     },
 };
     

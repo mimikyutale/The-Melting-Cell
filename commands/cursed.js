@@ -69,5 +69,8 @@ module.exports = {
         if (count == 20) {
             await interaction.reply({ files: ['./assets/cursed/20.png'] });
         }
+        const message = await interaction.fetchReply();
+        message.react('👍');
+        message.react('👎');
     },
 };

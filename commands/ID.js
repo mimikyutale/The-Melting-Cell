@@ -9,7 +9,7 @@ module.exports = {
                 .setName('ids')
                 .setDescription('Enter... ID')),
 	async execute(interaction) {
-        const bignum = 50
+        const bignum = 50 
         const smallnum = 0
         const count = Math.floor(Math.random() * bignum) + smallnum; // smallからbigまでの数値を生成
         const ids = interaction.options.getString('ids');
